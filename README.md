@@ -5,6 +5,7 @@ Microservices tutorial implementation for Assignment A03.
 **Name:** Bryan Jeshua Mario Timung
 **NPM:** 2206027021
 
+## Tutorial can be seen on this [link](Tutorial_OnPremise_2206027021_BryanJeshuaMarioTimung.pdf)
 ## Run
 
 ```bash
@@ -48,6 +49,7 @@ $LENS_ID = (Invoke-RestMethod http://localhost:3001/api/lenses)[0].id; $body = @
 ## WebSocket
 
 The notification service exposes a WebSocket endpoint at `ws://localhost:3003/ws`. The frontend automatically connects and displays real-time order notifications when new orders are placed.
+![alt text](image-7.png)
 
 ## Kubernetes Deployment
 
@@ -80,3 +82,7 @@ docker compose down
 - https://hub.docker.com/r/bryanjeshua/order-service
 - https://hub.docker.com/r/bryanjeshua/notification-service
 - https://hub.docker.com/r/bryanjeshua/frontend
+
+## AI Usage Disclaimer
+
+This project was developed with the assistance of Claude (Anthropic) as an AI pair programming tool. AI assistance was used for tasks including debugging, writing Kubernetes manifests, and improving implementation quality. All code has been created, reviewed, understood, and validated by the author. The overall architecture, design decisions, and final implementation remain the responsibility of Bryan Jeshua Mario Timung.

@@ -49,6 +49,9 @@ $LENS_ID = (Invoke-RestMethod http://localhost:3001/api/lenses)[0].id; $body = @
 ## WebSocket
 
 The notification service exposes a WebSocket endpoint at `ws://localhost:3003/ws`. The frontend automatically connects and displays real-time order notifications when new orders are placed.
+Before smoke test
+![alt text](image-8.png)
+After smoke test
 ![alt text](image-7.png)
 
 ## Kubernetes Deployment
